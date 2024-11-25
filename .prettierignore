@@ -1,0 +1,16 @@
+dist
+node_modules
+public
+.husky
+.vscode
+.idea
+*.sh
+*.md
+
+assets/
+types/
+
+components.d.ts
+env.d.ts
+
+**.yaml

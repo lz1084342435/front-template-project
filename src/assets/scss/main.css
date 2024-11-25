@@ -1,0 +1,19 @@
+@import './scss-suger.scss';
+@import './reset-elemenet-plus.scss';
+@import './transition.scss';
+@import './project-style.scss';
+@import './global-var.scss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  svg {
+    display: inline-block;
+  }
+
+  .collapse {
+    visibility: visible;
+  }
+}

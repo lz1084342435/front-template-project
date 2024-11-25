@@ -1,0 +1,18 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "types/**/*.d.ts", "mock/**/*.ts"], // 需要编译的文件
+  "exclude": ["src/**/__tests__/*"],
+  "compilerOptions": {
+    "composite": true,
+    "module": "ESNext", // 或 "ES6" 或 "CommonJS"
+    "target": "ESNext",
+    "moduleResolution": "Node",
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "#/*": ["./types/*"]
+    },
+    "types": ["vite/client", "element-plus/global"]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "files": [],
+  "references": [
+    {
+      // 运行在node环境配置的文件
+      "path": "./tsconfig.node.json"
+    },
+    {
+      // 运行在浏览器环境配置的文件
+      "path": "./tsconfig.app.json"
+    }
+  ]
+}
